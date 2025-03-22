@@ -1,0 +1,22 @@
+connectors:
+  J1_Main: &template1
+    pinlabels: [GND, IN4, IN3, IN2, IN1, IN0]
+    
+    type : JST B6B-XH
+    subtype: female
+  J1_Relay:
+      <<: *template1
+      pinlabels: [GND, IN4, IN3, IN2, IN1, IN0, 5V]
+      type: JST B7B-XH
+cables:
+  Cable_1:
+    wirecount: 6
+    length: 1
+    gauge: 22 awg
+    colors: [BK, GN, GN, GN, GN, RD]
+
+connections:
+  -
+    - J1_Main: [1-6]
+    - Cable_1: [1-6]
+    - J1_Peripheral: [1-6]

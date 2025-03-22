@@ -4,7 +4,7 @@ connectors:
     pincount: 6
     type : JST B6B-XH
     subtype: female
-  J1_P:
+  J1_Peripheral:
       <<: *template1
 cables:
   Cable_1:

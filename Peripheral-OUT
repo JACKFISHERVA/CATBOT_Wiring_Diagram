@@ -1,1 +1,29 @@
+connectors:
+  J6_Peripheral: &Analog
+    pinlabels: [AGND, 3.3V, INPUT]
+    type : JST B3B-XH
+    subtype: female
+  J7_Peripheral:
+      <<: *Analog
+  J4_Peripheral:
+      <<: *Analog
+  J8_Peripheral:
+      <<: *Analog
 
+  J3_Peripheral : &Digital
+    pinlabels: [GND, IN0, IN1, IN2, IN3, IN4, IN5, IN5, IN6, IN7, 3.3V]
+    type : JST B10B-XH
+    subtype: female
+
+  J2_Peripheral:
+    <<: *Digital
+
+cables:
+  Cable_1:
+    wirecount: 6
+    length: 1
+    gauge: 22 awg
+    colors: [BK, GN, GN, GN, GN, GN]
+
+connections:
+  -

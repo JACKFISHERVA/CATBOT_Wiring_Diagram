@@ -1,0 +1,21 @@
+connectors:
+  J1_M:
+    pincount: 6
+    type : JST B6B-XH
+    subtype: female
+  J1_P:
+    pincount: 6
+    type : JST B6B-XH
+    subtype: female
+cables:
+  Cable_1:
+    wirecount: 6
+    length: 1
+    gauge: 22 awg
+    colors: [BL, GN, GN, GN, GN, RD]
+
+connections:
+  -
+    - J1_M: [1-6]
+    - Cable_1: [1-6]
+    - J1_P: [1-6]

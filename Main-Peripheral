@@ -1,12 +1,11 @@
 connectors:
-  J1_M:
+  J1_Main: &template1
+    pinlabels:[GND, SCL, SDA, INT_A, INT_B, 3.3V]
     pincount: 6
     type : JST B6B-XH
     subtype: female
   J1_P:
-    pincount: 6
-    type : JST B6B-XH
-    subtype: female
+      <<: *template1
 cables:
   Cable_1:
     wirecount: 6

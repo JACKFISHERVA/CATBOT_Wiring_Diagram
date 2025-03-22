@@ -17,4 +17,4 @@ connections:
   -
     - J1_Main: [1-6]
     - Cable_1: [1-6]
-    - J1_Peripheral: [1-6]
+    - J1_Relay: [1-6]

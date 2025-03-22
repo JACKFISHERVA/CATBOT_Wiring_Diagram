@@ -13,7 +13,7 @@ cables:
     wirecount: 6
     length: 1
     gauge: 22 awg
-    colors: [BK, GN, GN, GN, GN, RD]
+    colors: [BK, GN, GN, GN, GN, GN]
 
 connections:
   -

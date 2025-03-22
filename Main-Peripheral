@@ -1,7 +1,7 @@
 connectors:
   J1_Main: &template1
     pinlabels:[GND, SCL, SDA, INT_A, INT_B, 3.3V]
-    pincount: 6
+    # pincount: 6
     type : JST B6B-XH
     subtype: female
   J1_Peripheral:

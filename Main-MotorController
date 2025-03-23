@@ -1,0 +1,44 @@
+connectors:
+  Main_J2: &template_CAN
+    type: Molex KK 254
+    subtype: female
+    pinlabels: [CAN_L,CAN_L,CAN_H,CAN_H, GND]
+  MC1_CAN:
+    <<: *template_CAN
+  MC2_CAN:
+    <<: *template_CAN
+  MC3_CAN:
+    <<: *template_CAN
+  MC4_CAN:
+    <<: *template_CAN
+
+cables:
+  W1: &template_wire
+    gauge: 22
+    length: 0.2
+    colors: [GN, GN, YE, YE, BL]
+    category: bundle
+  W2:
+    <<: *template_wire
+  W3:
+    <<: *template_wire
+  W4:
+    <<: *template_wire
+
+connections:
+  -
+    - Main_J2: [1,3]
+    - W1: [1,3]
+    - MC1_CAN: [1,3]
+  -
+    - MC1_CAN: [1,3]
+    - W2: [1,3]
+    - MC2_CAN: [1,3]
+  -
+    - MC2_CAN: [1,3]
+    - W3: [1,3]
+    - MC3_CAN: [1,3]
+  -
+    - MC3_CAN: [1,3]
+    - W4: [1,3]
+    - MC4_CAN: [1,3]

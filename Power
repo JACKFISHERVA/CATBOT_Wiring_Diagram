@@ -1,7 +1,10 @@
 connectors:
-  BUS_BAR:
-    pinlabels: [+24V, GND]
+  GND: &BUS
     type: BUS BAR
+  +24V:
+      <<: *BUS
+
+
   +24_Input: # this is a unique ferrule
     style: simple
     type: Bus Bar Input port
@@ -22,4 +25,5 @@ connections:
     -
       - [+24_Input.,GND_Input.]
       - W1: [1,2]
-      - BUS_BAR: [1,2]
+      - GND: [1]
+  

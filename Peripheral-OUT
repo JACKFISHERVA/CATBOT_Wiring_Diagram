@@ -18,13 +18,6 @@ connectors:
   J2_Peripheral:
     <<: *Digital
 
-cables:
-  Cable_1:
-    wirecount: 6
-    length: 1
-    gauge: 22 awg
-    colors: [BK, GN, GN, GN, GN, GN]
-
 connections:
   -
     -J2_Peripheral

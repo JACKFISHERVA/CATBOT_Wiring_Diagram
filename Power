@@ -24,7 +24,7 @@ cables:
 connections:
     -
       - [+24_Input.,GND_Input.]
-      - W1: [1,2]
+      - W1: [1]
       - GND: [1]
-      - +24V: [1]
+ 
   

@@ -27,3 +27,11 @@ cables:
 
 connections:
   -
+    -J2_Peripheral
+    -J3_Peripheral
+    -J4_Peripheral
+    -J6_Peripheral
+    -J7_Peripheral
+    -J8_Peripheral
+    
+    

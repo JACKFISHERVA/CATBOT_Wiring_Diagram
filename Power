@@ -1,0 +1,25 @@
+connectors:
+  BUS_BAR:
+    pinlabels: [+24V, GND]
+    type: BUS BAR
+  +24_Input: # this is a unique ferrule
+    style: simple
+    type: Bus Bar Input port
+    color: RD # optional color
+  GND_Input: # this is a ferrule that will be auto-generated on demand
+    style: simple
+    type: Bus Bar Input port
+    color: BK
+
+cables:
+  W1:
+    category: bundle # bundle
+    length: 0.3
+    gauge: 0.5 mm2
+    colors: [YE, BK, BK, RD] # custom colors, wirecount is implicit
+
+connections:
+    -
+      - [+24_Input.,GND_Input.]
+      - W1: [1-4]
+      - BUS_BAR[1,2]

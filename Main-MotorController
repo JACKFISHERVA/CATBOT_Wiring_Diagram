@@ -31,14 +31,14 @@ connections:
     - W1: [1,3]
     - MC1_CAN: [1,3]
   -
-    - MC1_CAN: [1,3]
+    - MC1_CAN: [2,4]
     - W2: [1,3]
     - MC2_CAN: [1,3]
   -
-    - MC2_CAN: [1,3]
+    - MC2_CAN: [2,4]
     - W3: [1,3]
     - MC3_CAN: [1,3]
   -
-    - MC3_CAN: [1,3]
+    - MC3_CAN: [2,4]
     - W4: [1,3]
     - MC4_CAN: [1,3]

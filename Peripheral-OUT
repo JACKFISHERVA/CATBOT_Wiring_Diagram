@@ -22,6 +22,11 @@ connectors:
     <<: *Digital
 
 cables:
+  cable:
+    wirecount: 3
+    length: 1
+    gauge: 22
+    colors: [BL, RD, GN
 
 connections:
 -

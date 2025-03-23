@@ -28,7 +28,7 @@ connections:
       - GND: [1]
     -
       -+24V_Input.
-      - W2: [2]
+      - W1: [2]
       - +24V: [1]
  
   

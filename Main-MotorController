@@ -16,7 +16,7 @@ cables:
   W1: &template_wire
     gauge: 22
     length: 0.2
-    colors: [GN, GN, YE, YE, BL]
+    colors: [GN, GN, YE, YE, BK]
     category: bundle
   W2:
     <<: *template_wire

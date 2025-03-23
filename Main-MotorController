@@ -1,6 +1,6 @@
 connectors:
   Main_J2: &template_CAN
-    type: Molex KK 254
+    type: JST B5B-XH
     subtype: female
     pinlabels: [CAN_L,CAN_L,CAN_H,CAN_H, GND]
   MC1_CAN:
@@ -16,7 +16,7 @@ cables:
   W1: &template_wire
     gauge: 22
     length: 0.2
-    colors: [GN, GN, YE, YE, BK]
+    colors: [GN, YE, BK]
     category: bundle
   W2:
     <<: *template_wire

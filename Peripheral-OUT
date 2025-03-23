@@ -9,13 +9,31 @@ connectors:
       <<: *Analog
   J8_Peripheral:
       <<: *Analog
+  Pressure_Sensor:
+      <<: *Analog
+      subtype: male
+
+  J3_Peripheral : &Digital
+    pinlabels: [GND, IN0, IN1, IN2, IN3, IN4, IN5, IN5, IN6, IN7, 3.3V]
+    type : JST B10B-XH
+    subtype: female
+
+  J2_Peripheral:
+    <<: *Digital
+
+cables:
 
 connections:
 -
+  - J2_Peripheral
+  - J3_Peripheral
   - J4_Peripheral
   - J6_Peripheral
   - J7_Peripheral
   - J8_Peripheral
+    
+    
+
     
     
 

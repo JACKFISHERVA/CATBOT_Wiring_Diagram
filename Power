@@ -34,45 +34,7 @@ cables:
   W4: 
     <<: *wire
     colors: [BK] 
-  W5: 
-    <<: *wire
-    colors: [BK] 
-  W6: 
-    <<: *wire
-    colors: [BK] 
-  W6: 
-    <<: *wire
-    colors: [BK]
-  W7: 
-    <<: *wire
-    colors: [BK]
-  W8: 
-    <<: *wire
-    colors: [BK]
-  W9: 
-    <<: *wire
-    colors: [BK]
 
-  W10: 
-    <<: *wire
-
-  W11: 
-    <<: *wire
-
-  W12: 
-    <<: *wire
-
-  W13: 
-    <<: *wire
-
-  W14: 
-    <<: *wire
-
-  W15: 
-    <<: *wire
-
-  W16: 
-    <<: *wire
 
 
 
@@ -93,51 +55,51 @@ connections:
     - Bus_Bar_+24V: 1
   -
     - Bus_Bar_GND: 1
-    - W9: 1
+    - W4: 1
     - MC1: 2
   -
     - Bus_Bar_GND: 1
-    - W9: 1
+    - W4: 1
     - MC2: 2
   -
     - Bus_Bar_GND: 1
-    - W9: 1
+    - W4: 1
     - MC3: 2
   -
     - Bus_Bar_GND: 1
-    - W9: 1
+    - W4: 1
     - MC4: 2
   -
     - Bus_Bar_GND: 1
-    - W9: 1
+    - W4: 1
     - Main: 2
   -
     - Bus_Bar_GND: 1
-    - W16: 1
+    - W4: 1
     - Relay: 2
   -    
     - Bus_Bar_+24V: 1
-    - W16: 1
+    - W3: 1
     - MC1: 1
   -
     - Bus_Bar_+24V: 1
-    - W16: 1
+    - W3: 1
     - MC2: 1
   -
     - Bus_Bar_+24V: 1
-    - W16: 1
+    - W3: 1
     - MC3: 1
   -
     - Bus_Bar_+24V: 1
-    - W16: 1
+    - W3: 1
     - MC4: 1
   -
     - Bus_Bar_+24V: 1
-    - W16: 1
+    - W3: 1
     - Main: 1
   -
     - Bus_Bar_+24V: 1
-    - W16: 1
+    - W3: 1
     - Relay: 1
     
     

@@ -1,25 +1,144 @@
 connectors:
-  X1:
-    pinlabels: [+12V, GND, GND, +5V]
-    type: Molex 8981
+  Power_IN:
+    pinlabels: [+24V, GND]
+  E-Stop:
+    pinlabels: [+24V, GND]
+  Bus_Bar_+24V:
+    pinlabels: [+24V]
+  Bus_Bar_GND:
+    pinlabels: [GND]
+  MC1: &MC_Template
+    pinlabels: [+24V, GND]
+    type: Term Block
     subtype: female
-  F1:
-    style: simple
-    type: Crimp ferrule
-    subtype: 0.5 mm²
-    color: OG # optional color
+  MC2:
+    <<: *MC_Template
+  MC3:
+    <<: *MC_Template
+  MC4:
+    <<: *MC_Template
+  Main:
+    <<: *MC_Template
+  Relay:
+    <<: *MC_Template
 
 cables:
-  W1:
-    category: bundle # bundle
-    length: 0.3
-    gauge: 0.5 mm2
-    colors: [YE, BK, BK, RD] # custom colors, wirecount is implicit
+  W1: &cable
+    gauge: 12 AWG
+    colors: [RD, BK] # custom colors, wirecount is implicit
+  W2:
+    <<: *cable
+  W3: &wire
+
+    gauge: 12 AWG
+    colors: [RD] 
+  W4: 
+    <<: *wire
+     colors: [BK] 
+  W5: 
+    <<: *wire
+     colors: [BK]
+  W6: 
+    <<: *wire
+     colors: [BK] 
+  W6: 
+    <<: *wire
+     colors: [BK] 
+  W7: 
+    <<: *wire
+     colors: [BK] 
+  W8: 
+    <<: *wire
+     colors: [BK] 
+  W9: 
+    <<: *wire
+     colors: [BK] 
+
+  W10: 
+    <<: *wire
+
+  W11: 
+    <<: *wire
+
+  W12: 
+    <<: *wire
+
+  W13: 
+    <<: *wire
+
+  W14: 
+    <<: *wire
+
+  W15: 
+    <<: *wire
+
+  W16: 
+    <<: *wire
+
+
+
+  
 
 connections:
   -
-    - F1. # a new ferrule is auto-generated for each of the four wires
-    - W1: [1-4]
-    - X1: [1-4]
+    - Power_IN. # a new ferrule is auto-generated for each of the four wires
+    - W1: [1,2]
+    - E-Stop: [1,2]
+- 
+    - E-Stop: 1
+    - W3: 1
+    - Bus_Bar_+24V: 1
+- 
+    - E-Stop: 2
+    - W4: 1
+    - Bus_Bar_GND: 1
+-
+    - Bus_Bar_GND: 1
+    - W5: 1
+    - MC1: 2
+-
+    - Bus_Bar_GND: 1
+    - W6: 1
+    - MC2: 2
+-
+    - Bus_Bar_GND: 1
+    - W7: 1
+    - MC3: 2
+-
+    - Bus_Bar_GND: 1
+    - W8: 1
+    - MC4: 2
+-
+    - Bus_Bar_GND: 1
+    - W9: 1
+    - Main: 2
+-
+    - Bus_Bar_GND: 1
+    - W10: 1
+    - Relay: 2
+-    
+    - Bus_Bar_+24V: 1
+    - W11: 1
+    - MC1: 1
+-
+    - Bus_Bar_+24V: 1
+    - W12: 1
+    - MC2: 1
+-
+    - Bus_Bar_+24V: 1
+    - W13: 1
+    - MC3: 1
+-
+    - Bus_Bar_+24V: 1
+    - W14: 1
+    - MC4: 1
+-
+    - Bus_Bar_+24V: 1
+    - W15: 1
+    - Main: 1
+-
+    - Bus_Bar_+24V: 1
+    - W16: 1
+    - Relay: 1
     
     

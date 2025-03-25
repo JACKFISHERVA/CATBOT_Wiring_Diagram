@@ -42,7 +42,7 @@ cables:
     <<: *cable
   W9: &wire
     gauge: 12 AWG
-    colors: [BK] 
+    colors: [RD] 
  
 
 

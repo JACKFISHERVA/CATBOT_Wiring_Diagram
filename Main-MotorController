@@ -14,8 +14,7 @@ connectors:
 
 cables:
   W1: &template_wire
-    gauge: 22
-    length: 0.2
+    gauge: 22 AWG
     colors: [GN, YE, BK]
     category: bundle
   W2:

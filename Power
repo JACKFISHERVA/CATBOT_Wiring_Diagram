@@ -2,7 +2,7 @@ connectors:
   Power_IN:
     pinlabels: [+24V, GND]
   E-Stop:
-    pinlabels: [+24V, GND]
+    pinlabels: [+24V, +24V, NC, NC]
   Bus_Bar_+24V:
     pinlabels: [+24V]
   Bus_Bar_GND:
@@ -79,17 +79,17 @@ cables:
 
 connections:
   -
-    - Power_IN. # a new ferrule is auto-generated for each of the four wires
-    - W1: [1,2]
-    - E-Stop: [1,2]
+    - Power_IN[1] # a new ferrule is auto-generated for each of the four wires
+    - W1: [1]
+    - E-Stop: [1]
+  -
+    - Power_IN[2] # a new ferrule is auto-generated for each of the four wires
+    - W1: [2]
+    - Bus_Bar_GND: 1
   - 
     - E-Stop: 1
     - W3: 1
     - Bus_Bar_+24V: 1
-  - 
-    - E-Stop: 2
-    - W4: 1
-    - Bus_Bar_GND: 1
   -
     - Bus_Bar_GND: 1
     - W5: 1

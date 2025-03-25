@@ -7,19 +7,19 @@ connectors:
     pinlabels: [+24V]
   Bus_Bar_GND:
     pinlabels: [GND]
-  MC1: &MC_Template
+  Motor_Controller_1: &MC_Template
     pinlabels: [+24V, GND]
     type: Term Block
     subtype: female
-  MC2:
+  Motor_Controller_2:
     <<: *MC_Template
-  MC3:
+  Motor_Controller_3:
     <<: *MC_Template
-  MC4:
+  Motor_Controller_4:
     <<: *MC_Template
-  Main:
+  Main_Board:
     <<: *MC_Template
-  Relay:
+  Relay_Board:
     <<: *MC_Template
 
 cables:
@@ -67,50 +67,50 @@ connections:
   -
     - Bus_Bar_GND: 1
     - W2: 2
-    - MC1: 2
+    - Motor_Controller_1: 2
   -
     - Bus_Bar_GND: 1
     - W3: 2
-    - MC2: 2
+    - Motor_Controller_2: 2
   -
     - Bus_Bar_GND: 1
     - W4: 2
-    - MC3: 2
+    - Motor_Controller_3: 2
   -
     - Bus_Bar_GND: 1
     - W5: 2
-    - MC4: 2
+    - Motor_Controller_4: 2
   -
     - Bus_Bar_GND: 1
     - W6: 2
-    - Main: 2
+    - Main_Board: 2
   -
     - Bus_Bar_GND: 1
     - W7: 2
-    - Relay: 2
+    - Relay_Board: 2
   -    
     - Bus_Bar_+24V: 1
     - W2: 1
-    - MC1: 1
+    - Motor_Controller_1: 1
   -
     - Bus_Bar_+24V: 1
     - W3: 1
-    - MC2: 1
+    - Motor_Controller_2: 1
   -
     - Bus_Bar_+24V: 1
     - W4: 1
-    - MC3: 1
+    - Motor_Controller_3: 1
   -
     - Bus_Bar_+24V: 1
     - W5: 1
-    - MC4: 1
+    - Motor_Controller_4: 1
   -
     - Bus_Bar_+24V: 1
     - W6: 1
-    - Main: 1
+    - Main_Board: 1
   -
     - Bus_Bar_+24V: 1
     - W7: 1
-    - Relay: 1
+    - Relay_Board: 1
     
     

@@ -33,7 +33,11 @@ cables:
     colors: [RD] 
   W4: 
     <<: *wire
-    colors: [BK] 
+    colors: [BK]
+  W5: 
+    <<: *wire
+ 
+
 
 
 
@@ -51,7 +55,7 @@ connections:
     - Bus_Bar_GND: 1
   - 
     - E-Stop: 2
-    - W3: 1
+    - W5: 1
     - Bus_Bar_+24V: 1
   -
     - Bus_Bar_GND: 1

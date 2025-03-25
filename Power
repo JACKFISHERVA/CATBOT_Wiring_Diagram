@@ -18,8 +18,8 @@ cables:
 
 connections:
   -
-    - X1: [1-4]
-    - W1: [1-4]
     - F1. # a new ferrule is auto-generated for each of the four wires
+    - W1: [1-4]
+    - X1: [1-4]
     
     

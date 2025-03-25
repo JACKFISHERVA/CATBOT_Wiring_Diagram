@@ -29,15 +29,13 @@ cables:
   W2:
     <<: *cable
   W3: &wire
-
     gauge: 12 AWG
     colors: [RD] 
   W4: 
     <<: *wire
-     colors: [BK] 
+
   W5: 
     <<: *wire
-     colors: [BK]
   W6: 
     <<: *wire
      colors: [BK] 

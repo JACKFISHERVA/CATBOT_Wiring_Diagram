@@ -87,7 +87,7 @@ connections:
     - W1: 2
     - Bus_Bar_GND: 1
   - 
-    - E-Stop: 1
+    - E-Stop: 2
     - W3: 1
     - Bus_Bar_+24V: 1
   -

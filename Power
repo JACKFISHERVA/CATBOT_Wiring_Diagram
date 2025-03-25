@@ -93,19 +93,19 @@ connections:
     - Bus_Bar_+24V: 1
   -
     - Bus_Bar_GND: 1
-    - W6: 1
+    - W9: 1
     - MC1: 2
   -
     - Bus_Bar_GND: 1
-    - W6: 1
+    - W9: 1
     - MC2: 2
   -
     - Bus_Bar_GND: 1
-    - W7: 1
+    - W9: 1
     - MC3: 2
   -
     - Bus_Bar_GND: 1
-    - W8: 1
+    - W9: 1
     - MC4: 2
   -
     - Bus_Bar_GND: 1
@@ -113,27 +113,27 @@ connections:
     - Main: 2
   -
     - Bus_Bar_GND: 1
-    - W10: 1
+    - W16: 1
     - Relay: 2
   -    
     - Bus_Bar_+24V: 1
-    - W11: 1
+    - W16: 1
     - MC1: 1
   -
     - Bus_Bar_+24V: 1
-    - W12: 1
+    - W16: 1
     - MC2: 1
   -
     - Bus_Bar_+24V: 1
-    - W13: 1
+    - W16: 1
     - MC3: 1
   -
     - Bus_Bar_+24V: 1
-    - W14: 1
+    - W16: 1
     - MC4: 1
   -
     - Bus_Bar_+24V: 1
-    - W15: 1
+    - W16: 1
     - Main: 1
   -
     - Bus_Bar_+24V: 1

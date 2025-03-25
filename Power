@@ -93,7 +93,7 @@ connections:
     - Bus_Bar_+24V: 1
   -
     - Bus_Bar_GND: 1
-    - W5: 1
+    - W6: 1
     - MC1: 2
   -
     - Bus_Bar_GND: 1

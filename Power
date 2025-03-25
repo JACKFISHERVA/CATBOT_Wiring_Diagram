@@ -59,7 +59,7 @@ connections:
     - Bus_Bar_+24V: 1
   -
     - Bus_Bar_GND: 1
-    - W4: 1
+    - W2: 2
     - MC1: 2
   -
     - Bus_Bar_GND: 1
@@ -83,7 +83,7 @@ connections:
     - Relay: 2
   -    
     - Bus_Bar_+24V: 1
-    - W3: 1
+    - W2: 1
     - MC1: 1
   -
     - Bus_Bar_+24V: 1

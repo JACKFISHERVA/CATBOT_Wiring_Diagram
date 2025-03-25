@@ -28,6 +28,18 @@ cables:
     colors: [RD, BK] # custom colors, wirecount is implicit
   W2:
     <<: *cable
+  W3:
+    <<: *cable
+  W4:
+    <<: *cable
+  W5:
+    <<: *cable
+  W6:
+    <<: *cable
+  W7:
+    <<: *cable
+  W8:
+    <<: *cable
   W3: &wire
     gauge: 12 AWG
     colors: [RD] 
@@ -63,23 +75,23 @@ connections:
     - MC1: 2
   -
     - Bus_Bar_GND: 1
-    - W4: 1
+    - W3: 2
     - MC2: 2
   -
     - Bus_Bar_GND: 1
-    - W4: 1
+    - W4: 2
     - MC3: 2
   -
     - Bus_Bar_GND: 1
-    - W4: 1
+    - W5: 2
     - MC4: 2
   -
     - Bus_Bar_GND: 1
-    - W4: 1
+    - W6: 2
     - Main: 2
   -
     - Bus_Bar_GND: 1
-    - W4: 1
+    - W7: 2
     - Relay: 2
   -    
     - Bus_Bar_+24V: 1
@@ -91,19 +103,19 @@ connections:
     - MC2: 1
   -
     - Bus_Bar_+24V: 1
-    - W3: 1
+    - W4: 1
     - MC3: 1
   -
     - Bus_Bar_+24V: 1
-    - W3: 1
+    - W5: 1
     - MC4: 1
   -
     - Bus_Bar_+24V: 1
-    - W3: 1
+    - W6: 1
     - Main: 1
   -
     - Bus_Bar_+24V: 1
-    - W3: 1
+    - W7: 1
     - Relay: 1
     
     

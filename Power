@@ -40,14 +40,9 @@ cables:
     <<: *cable
   W8:
     <<: *cable
-  W3: &wire
+  W9: &wire
     gauge: 12 AWG
-    colors: [RD] 
-  W4: 
-    <<: *wire
-    colors: [BK]
-  W5: 
-    <<: *wire
+    colors: [BK] 
  
 
 
@@ -67,7 +62,7 @@ connections:
     - Bus_Bar_GND: 1
   - 
     - E-Stop: 2
-    - W5: 1
+    - W9: 1
     - Bus_Bar_+24V: 1
   -
     - Bus_Bar_GND: 1

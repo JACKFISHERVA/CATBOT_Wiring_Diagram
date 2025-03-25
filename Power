@@ -38,19 +38,19 @@ cables:
     <<: *wire
   W6: 
     <<: *wire
-     colors: [BK] 
+ 
   W6: 
     <<: *wire
-     colors: [BK] 
+
   W7: 
     <<: *wire
-     colors: [BK] 
+
   W8: 
     <<: *wire
-     colors: [BK] 
+ 
   W9: 
     <<: *wire
-     colors: [BK] 
+
 
   W10: 
     <<: *wire

@@ -33,7 +33,7 @@ cables:
     colors: [RD] 
   W4: 
     <<: *wire
-      colors: [BK] 
+    colors: [BK] 
   W5: 
     <<: *wire
   W6: 

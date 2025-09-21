@@ -4,14 +4,27 @@ connectors:
     type : JST B3B-XH
     subtype: female
   J7_Peripheral:
-      <<: *Analog
+    <<: *Analog
   J4_Peripheral:
-      <<: *Analog
+    <<: *Analog
+  J5_Peripheral:
+    <<: *Analog
   J8_Peripheral:
-      <<: *Analog
+    <<: *Analog
   Pressure_Sensor:
-      <<: *Analog
-      subtype: male
+    <<: *Analog
+    subtype: male
+  Pot_1: &Pot
+    pinlabels: [GND, 3.3V, OUTPUT]
+    type: end
+  Pot_2:
+    <<: *Pot
+  Pot_3:
+    <<: *Pot
+  Pot_4:
+    <<: *Pot
+
+
 
   J3_Peripheral : &Digital
     pinlabels: [GND, IN0, IN1, IN2, IN3, IN4, IN5, IN5, IN6, IN7, 3.3V]
@@ -22,20 +35,82 @@ connectors:
     <<: *Digital
 
 cables:
-  cable:
+  cable_1: &pot_wires
     wirecount: 3
     length: 1
     gauge: 22
-    colors: [BL, RD, GN]
+    colors: [BK, RD, GN]
+  cable_2: 
+    <<: *pot_wires
+  cable_3: 
+    <<: *pot_wires
+  cable_4: 
+    <<: *pot_wires
+  cable_5: 
+    <<: *pot_wires
 
 connections:
 -
-  - J2_Peripheral
-  - J3_Peripheral
-  - J4_Peripheral
-  - J6_Peripheral
-  - J7_Peripheral
-  - J8_Peripheral
+  - J4_Peripheral: 1
+  - cable_1: 1
+  - Pot_1: 1
+-
+  - J4_Peripheral: 2
+  - cable_1: 2
+  - Pot_1: 2
+-
+  - J4_Peripheral: 3
+  - cable_1: 3
+  - Pot_1: 3
+-
+  - J5_Peripheral: 1
+  - cable_2: 1
+  - Pot_2: 1
+-
+  - J5_Peripheral: 2
+  - cable_2: 2
+  - Pot_2: 2
+-
+  - J5_Peripheral: 3
+  - cable_2: 3
+  - Pot_2: 3
+-
+  - J6_Peripheral: 1
+  - cable_3: 1
+  - Pot_3: 1
+-
+  - J6_Peripheral: 2
+  - cable_3: 2
+  - Pot_3: 2
+-
+  - J6_Peripheral: 3
+  - cable_3: 3
+  - Pot_3: 3
+-
+  - J7_Peripheral: 1
+  - cable_4: 1
+  - Pot_4: 1
+-
+  - J7_Peripheral: 2
+  - cable_4: 2
+  - Pot_4: 2
+-
+  - J7_Peripheral: 3
+  - cable_4: 3
+  - Pot_4: 3
+-
+  - J8_Peripheral: 1
+  - cable_5: 1
+  - Pressure_Sensor: 1
+-
+  - J8_Peripheral: 2
+  - cable_5: 2
+  - Pressure_Sensor: 2
+-
+  - J8_Peripheral: 3
+  - cable_5: 3
+  - Pressure_Sensor: 3
+
     
     
 

@@ -1,18 +1,44 @@
-connectors:
-  Power_IN:
-    pinlabels: [+24V, GND]
-  E-Stop:
-    pinlabels: [+24V, +24V, NC, NC]
-  Power_Switch:
-    pinlabels: [+24V, +24V]
-  Bus_Bar_+24V:
-    pinlabels: [+24V]
-  Bus_Bar_GND:
-    pinlabels: [GND]
-  Motor_Controller_1: &MC_Template
-    pinlabels: [+24V, GND]
+  Motor_Controller: &MC_Template
+    pinlabels: [+3.3V,
+                GND,
+                SCK,
+                MISO,
+                MOSI,
+                GPIO_3,
+                +3.3V,
+                GND,
+                SCK,
+                MISO,
+                MOSI,
+                GPIO_4,
+                GPIO_5,
+                +3.3V,
+                GPIO_6,
+                +3.3V,
+                GPIO_7,
+                +3.3V,
+                GPIO_8,
+                +3.3V
+    ]
     type: Term Block
     subtype: female
+  Encoder_1: &EN_Template
+    pinlabels: [+3.3V, GND, SCK, MISO, MOSI, INT]
+  Encoder_2:
+    <<: *EN_Template
+  Limit_Switch_1: &Limit_Switch_Template
+    pinlabels: [GPIO_Pin, +3.3V]
+    type: Term Block
+  Limit_Switch_2:
+    <<: *Limit_Switch_Template
+  Limit_Switch_3:
+    <<: *Limit_Switch_Template
+  Limit_Switch_4:
+    <<: *Limit_Switch_Template
+
+
+  
+  
   Motor_Controller_2:
     <<: *MC_Template
   Motor_Controller_3:

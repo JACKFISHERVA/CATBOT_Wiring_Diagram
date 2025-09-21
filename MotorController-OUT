@@ -1,0 +1,150 @@
+connectors:
+  Motor_Controller: &MC_Template
+    pinlabels: [+3.3V,
+                GND,
+                SCK,
+                MISO,
+                MOSI,
+                GPIO_3,
+                +3.3V,
+                GND,
+                SCK,
+                MISO,
+                MOSI,
+                GPIO_4,
+                GPIO_5,
+                +3.3V,
+                GPIO_6,
+                +3.3V,
+                GPIO_7,
+                +3.3V,
+                GPIO_8,
+                +3.3V
+    ]
+    type: Term Block
+    subtype: female
+  Encoder_1: &EN_Template
+    pinlabels: [+3.3V, GND, SCK, MISO, MOSI, SS]
+  Encoder_2:
+    <<: *EN_Template
+  Limit_Switch_1: &Limit_Switch_Template
+    pinlabels: [GPIO_Pin, +3.3V]
+    type: Term Block
+  Limit_Switch_2:
+    <<: *Limit_Switch_Template
+  Limit_Switch_3:
+    <<: *Limit_Switch_Template
+  Limit_Switch_4:
+    <<: *Limit_Switch_Template
+
+cables:
+  W1: &limit_cable
+    gauge: 22 AWG
+    colors: [BK, RD] # custom colors, wirecount is implicit
+  W2:
+    <<: *limit_cable
+  W3:
+    <<: *limit_cable
+  W4:
+    <<: *limit_cable
+  W5: &Encoder_cable
+    gauge: 22 AWG
+    colors: [RD, BK, GN, GN, GN, GN]
+  W6:
+    <<: *Encoder_cable
+  W7:
+    <<: *limit_cable
+  W8:
+    <<: *limit_cable
+  W9: &wire
+    gauge: 12 AWG
+    colors: [RD]
+  W10: 
+    <<: *limit_cable 
+  W11: 
+    <<: *limit_cable 
+ 
+
+connections:
+ - 
+  - Motor_Controller: 13
+  - W1: 1
+  - Limit_Switch_1: 1
+ - 
+  - Motor_Controller: 14
+  - W1: 2
+  - Limit_Switch_1: 2
+ - 
+  - Motor_Controller: 15
+  - W2: 1
+  - Limit_Switch_2: 1
+ - 
+  - Motor_Controller: 16
+  - W2: 2
+  - Limit_Switch_2: 2
+ - 
+  - Motor_Controller: 17
+  - W3: 1
+  - Limit_Switch_3: 1
+ - 
+  - Motor_Controller: 18
+  - W3: 2
+  - Limit_Switch_3: 2
+ - 
+  - Motor_Controller: 19
+  - W4: 1
+  - Limit_Switch_4: 1
+ - 
+  - Motor_Controller: 20
+  - W4: 2
+  - Limit_Switch_4: 2
+ -
+  - Motor_Controller: 1
+  - W5: 1
+  - Encoder_1: 1
+ -
+  - Motor_Controller: 2
+  - W5: 2
+  - Encoder_1: 2
+ -
+  - Motor_Controller: 3
+  - W5: 3
+  - Encoder_1: 3
+ -
+  - Motor_Controller: 4
+  - W5: 4
+  - Encoder_1: 4
+ -
+  - Motor_Controller: 5
+  - W5: 5
+  - Encoder_1: 5
+ -
+  - Motor_Controller: 6
+  - W5: 6
+  - Encoder_1: 6
+ -
+  - Motor_Controller: 7
+  - W6: 1
+  - Encoder_2: 1
+ -
+  - Motor_Controller: 8
+  - W6: 2
+  - Encoder_2: 2
+ -
+  - Motor_Controller: 9
+  - W6: 3
+  - Encoder_2: 3
+ -
+  - Motor_Controller: 10
+  - W6: 4
+  - Encoder_2: 4
+ -
+  - Motor_Controller: 11
+  - W6: 5
+  - Encoder_2: 5
+ -
+  - Motor_Controller: 12
+  - W6: 6
+  - Encoder_2: 6
+    
+    
